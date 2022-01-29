@@ -191,288 +191,306 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           color: Colors.white,
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 40),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding:
-                                    const EdgeInsets.only(top: 30, bottom: 30),
-                                child: Text(
-                                  "Cards",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blueGrey.shade900),
-                                ),
-                              ),
-                              Row(
+                        child: SingleChildScrollView(
+                          child: Container(
+                            child: Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 40),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Container(
-                                    width:
-                                        MediaQuery.of(context).size.width - 80,
-                                    height: (MediaQuery.of(context).size.width -
-                                            80) /
-                                        1.7,
-                                    decoration: new BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(20.0),
-                                        color: Colors.indigo.shade900,
-                                        gradient: LinearGradient(
-                                          begin: Alignment.topRight,
-                                          end: Alignment.bottomLeft,
-                                          colors: [
-                                            Colors.amber.shade900,
-                                            Colors.red.shade200,
-                                          ],
-                                        ),
-                                        boxShadow: [
-                                          BoxShadow(
-                                            color: Colors.grey.withOpacity(0.5),
-                                            spreadRadius: 5,
-                                            blurRadius: 12,
-                                            offset: Offset(0,
-                                                3), // changes position of shadow
-                                          ),
-                                        ]),
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(
-                                          top: 40.0, left: 40, right: 40),
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text("CARDNAME",
-                                              style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 15,
-                                                  color: Colors.white)),
-                                          Text("DEBIT CARD",
-                                              style: TextStyle(
-                                                  fontSize: 9,
-                                                  color: Colors.white38)),
-                                          SizedBox(
-                                            height: 20,
-                                          ),
-                                          Row(
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 30, bottom: 30),
+                                    child: Text(
+                                      "Cards",
+                                      style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.blueGrey.shade900),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        width:
+                                            MediaQuery.of(context).size.width -
+                                                80,
+                                        height:
+                                            (MediaQuery.of(context).size.width -
+                                                    80) /
+                                                1.7,
+                                        decoration: new BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(20.0),
+                                            color: Colors.indigo.shade900,
+                                            gradient: LinearGradient(
+                                              begin: Alignment.topRight,
+                                              end: Alignment.bottomLeft,
+                                              colors: [
+                                                Colors.amber.shade900,
+                                                Colors.red.shade200,
+                                              ],
+                                            ),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.grey
+                                                    .withOpacity(0.5),
+                                                spreadRadius: 5,
+                                                blurRadius: 12,
+                                                offset: Offset(0,
+                                                    3), // changes position of shadow
+                                              ),
+                                            ]),
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                              top: 40.0, left: 40, right: 40),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
-                                              Text("****",
+                                              Text("CARDNAME",
                                                   style: TextStyle(
                                                       fontWeight:
                                                           FontWeight.bold,
-                                                      fontSize: 20,
+                                                      fontSize: 15,
                                                       color: Colors.white)),
-                                              SizedBox(
-                                                width: 15,
-                                              ),
-                                              Text("****",
+                                              Text("DEBIT CARD",
                                                   style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      fontSize: 20,
-                                                      color: Colors.white)),
+                                                      fontSize: 9,
+                                                      color: Colors.white38)),
                                               SizedBox(
-                                                width: 15,
+                                                height: 20,
                                               ),
-                                              Text("****",
-                                                  style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      fontSize: 20,
-                                                      color: Colors.white)),
-                                              SizedBox(
-                                                width: 15,
-                                              ),
-                                              Text("4265",
-                                                  style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      fontSize: 20,
-                                                      color: Colors.white)),
-                                            ],
-                                          ),
-                                          SizedBox(
-                                            height: 30,
-                                          ),
-                                          Row(
-                                            children: [
-                                              SizedBox(
-                                                width: 150,
-                                                child: Column(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text("CARDHOLDER",
-                                                        style: TextStyle(
-                                                            fontSize: 9,
-                                                            color: Colors
-                                                                .white38)),
-                                                    Text("Linda Thompson",
-                                                        style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            fontSize: 12,
-                                                            color:
-                                                                Colors.white)),
-                                                  ],
-                                                ),
-                                              ),
-                                              Column(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
+                                              Row(
                                                 children: [
-                                                  SizedBox(
-                                                    child: Text("EXPIRES",
-                                                        style: TextStyle(
-                                                            fontSize: 9,
-                                                            color: Colors
-                                                                .white38)),
-                                                  ),
-                                                  Text("2/24",
+                                                  Text("****",
                                                       style: TextStyle(
                                                           fontWeight:
                                                               FontWeight.bold,
-                                                          fontSize: 12,
+                                                          fontSize: 20,
                                                           color: Colors.white)),
+                                                  SizedBox(
+                                                    width: 15,
+                                                  ),
+                                                  Text("****",
+                                                      style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontSize: 20,
+                                                          color: Colors.white)),
+                                                  SizedBox(
+                                                    width: 15,
+                                                  ),
+                                                  Text("****",
+                                                      style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontSize: 20,
+                                                          color: Colors.white)),
+                                                  SizedBox(
+                                                    width: 15,
+                                                  ),
+                                                  Text("4265",
+                                                      style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontSize: 20,
+                                                          color: Colors.white)),
+                                                ],
+                                              ),
+                                              SizedBox(
+                                                height: 30,
+                                              ),
+                                              Row(
+                                                children: [
+                                                  SizedBox(
+                                                    width: 150,
+                                                    child: Column(
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                      children: [
+                                                        Text("CARDHOLDER",
+                                                            style: TextStyle(
+                                                                fontSize: 9,
+                                                                color: Colors
+                                                                    .white38)),
+                                                        Text("Linda Thompson",
+                                                            style: TextStyle(
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                                fontSize: 12,
+                                                                color: Colors
+                                                                    .white)),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Column(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    children: [
+                                                      SizedBox(
+                                                        child: Text("EXPIRES",
+                                                            style: TextStyle(
+                                                                fontSize: 9,
+                                                                color: Colors
+                                                                    .white38)),
+                                                      ),
+                                                      Text("2/24",
+                                                          style: TextStyle(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                              fontSize: 12,
+                                                              color: Colors
+                                                                  .white)),
+                                                    ],
+                                                  ),
                                                 ],
                                               ),
                                             ],
                                           ),
-                                        ],
+                                        ),
+                                      ),
+
+                                      // Container(
+                                      //   width: MediaQuery.of(context).size.width - 80,
+                                      //   height: (MediaQuery.of(context).size.width - 80) /
+                                      //       1.7,
+                                      //   decoration: new BoxDecoration(
+                                      //     borderRadius: BorderRadius.circular(20.0),
+                                      //     color: Colors.black,
+                                      //   ),
+                                      // )
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 40,
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 20),
+                                    child: Text(
+                                      "Card Info",
+                                      style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.blueGrey.shade900),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 10),
+                                    child: Container(
+                                      width: MediaQuery.of(context).size.width /
+                                          1.6,
+                                      height: 55,
+                                      decoration: new BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        color: Colors.blueGrey[50],
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            new RotationTransition(
+                                                turns:
+                                                    new AlwaysStoppedAnimation(
+                                                        45 / 360),
+                                                child: Icon(Icons
+                                                    .airplanemode_active_rounded)),
+                                            SizedBox(
+                                              width: 12,
+                                            ),
+                                            Text(
+                                              "Travel Card",
+                                              style: TextStyle(
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold,
+                                                  color:
+                                                      Colors.blueGrey.shade900),
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
-
-                                  // Container(
-                                  //   width: MediaQuery.of(context).size.width - 80,
-                                  //   height: (MediaQuery.of(context).size.width - 80) /
-                                  //       1.7,
-                                  //   decoration: new BoxDecoration(
-                                  //     borderRadius: BorderRadius.circular(20.0),
-                                  //     color: Colors.black,
-                                  //   ),
-                                  // )
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 10),
+                                    child: Container(
+                                      width: MediaQuery.of(context).size.width /
+                                          1.6,
+                                      height: 55,
+                                      decoration: new BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        color: Colors.blueGrey[50],
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Icon(Icons.wifi),
+                                            SizedBox(
+                                              width: 12,
+                                            ),
+                                            Text(
+                                              "Online Payments",
+                                              style: TextStyle(
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold,
+                                                  color:
+                                                      Colors.blueGrey.shade900),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 10),
+                                    child: Container(
+                                      width: MediaQuery.of(context).size.width /
+                                          1.6,
+                                      height: 55,
+                                      decoration: new BoxDecoration(
+                                        borderRadius: BorderRadius.circular(50),
+                                        color: Colors.blueGrey[50],
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Icon(Icons.moving_rounded),
+                                            SizedBox(
+                                              width: 12,
+                                            ),
+                                            Text(
+                                              "Investments",
+                                              style: TextStyle(
+                                                  fontSize: 15,
+                                                  fontWeight: FontWeight.bold,
+                                                  color:
+                                                      Colors.blueGrey.shade900),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )
                                 ],
                               ),
-                              SizedBox(
-                                height: 40,
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 20),
-                                child: Text(
-                                  "Card Info",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blueGrey.shade900),
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 10),
-                                child: Container(
-                                  width:
-                                      MediaQuery.of(context).size.width / 1.6,
-                                  height: 55,
-                                  decoration: new BoxDecoration(
-                                    borderRadius: BorderRadius.circular(50),
-                                    color: Colors.blueGrey[50],
-                                  ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        new RotationTransition(
-                                            turns: new AlwaysStoppedAnimation(
-                                                45 / 360),
-                                            child: Icon(Icons
-                                                .airplanemode_active_rounded)),
-                                        SizedBox(
-                                          width: 12,
-                                        ),
-                                        Text(
-                                          "Travel Card",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blueGrey.shade900),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 10),
-                                child: Container(
-                                  width:
-                                      MediaQuery.of(context).size.width / 1.6,
-                                  height: 55,
-                                  decoration: new BoxDecoration(
-                                    borderRadius: BorderRadius.circular(50),
-                                    color: Colors.blueGrey[50],
-                                  ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        Icon(Icons.wifi),
-                                        SizedBox(
-                                          width: 12,
-                                        ),
-                                        Text(
-                                          "Online Payments",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blueGrey.shade900),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 10),
-                                child: Container(
-                                  width:
-                                      MediaQuery.of(context).size.width / 1.6,
-                                  height: 55,
-                                  decoration: new BoxDecoration(
-                                    borderRadius: BorderRadius.circular(50),
-                                    color: Colors.blueGrey[50],
-                                  ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(10.0),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        Icon(Icons.moving_rounded),
-                                        SizedBox(
-                                          width: 12,
-                                        ),
-                                        Text(
-                                          "Investments",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blueGrey.shade900),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
+                            ),
                           ),
                         ),
                       ),
