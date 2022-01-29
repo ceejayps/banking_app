@@ -512,427 +512,445 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 40),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 30, bottom: 20),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Transactions",
-                                  style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blueGrey.shade900),
-                                ),
-                                Row(
-                                  children: [
-                                    Text(
-                                      "Sort by",
-                                      style: TextStyle(
-                                          fontSize: 12,
-                                          color: Colors.black87,
-                                          fontWeight: FontWeight.w300),
-                                    ),
-                                    SizedBox(
-                                      width: 1,
-                                    ),
-                                    Text(
-                                      "Date",
-                                      style: TextStyle(
-                                          color: Colors.amber.shade900,
-                                          fontWeight: FontWeight.w400),
-                                    ),
-                                    Icon(Icons.keyboard_arrow_down_rounded)
-                                  ],
-                                )
-                              ],
-                            ),
-                          ),
-                          Text(
-                            "Today",
-                            style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.grey),
-                          ),
-                          SizedBox(
-                            height: 0,
-                          ),
-                          ///////////////////////////////////////////////////
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 55,
-                              decoration: new BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.blueGrey[50],
-                              ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 20, right: 20),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Chester Johnson",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blueGrey.shade900),
-                                        ),
-                                        Text(
-                                          "Just now",
-                                          style: TextStyle(
-                                              fontSize: 13, color: Colors.grey),
-                                        )
-                                      ],
-                                    ),
-                                    Text(
-                                      "+50.00\$",
-                                      style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.green),
-                                    )
-                                  ],
-                                ),
+                      child: SingleChildScrollView(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(top: 30, bottom: 20),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Transactions",
+                                    style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.blueGrey.shade900),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text(
+                                        "Sort by",
+                                        style: TextStyle(
+                                            fontSize: 12,
+                                            color: Colors.black87,
+                                            fontWeight: FontWeight.w300),
+                                      ),
+                                      SizedBox(
+                                        width: 1,
+                                      ),
+                                      Text(
+                                        "Date",
+                                        style: TextStyle(
+                                            color: Colors.amber.shade900,
+                                            fontWeight: FontWeight.w400),
+                                      ),
+                                      Icon(Icons.keyboard_arrow_down_rounded)
+                                    ],
+                                  )
+                                ],
                               ),
                             ),
-                          ),
-                          //////////////////////////////////////////////
-                          ///
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 55,
-                              decoration: new BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.blueGrey[50],
-                              ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 20, right: 20),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Jason Clark",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blueGrey.shade900),
-                                        ),
-                                        Text(
-                                          "Just now",
-                                          style: TextStyle(
-                                              fontSize: 13, color: Colors.grey),
-                                        )
-                                      ],
-                                    ),
-                                    Text(
-                                      "-46.79\$",
-                                      style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.red),
-                                    )
-                                  ],
+                            Text(
+                              "Today",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.grey),
+                            ),
+                            SizedBox(
+                              height: 0,
+                            ),
+                            ///////////////////////////////////////////////////
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 10),
+                              child: Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 55,
+                                decoration: new BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.blueGrey[50],
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 20, right: 20),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Chester Johnson",
+                                            style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                                color:
+                                                    Colors.blueGrey.shade900),
+                                          ),
+                                          Text(
+                                            "Just now",
+                                            style: TextStyle(
+                                                fontSize: 13,
+                                                color: Colors.grey),
+                                          )
+                                        ],
+                                      ),
+                                      Text(
+                                        "+50.00\$",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.green),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          ///////////////////////////////////////////
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Text(
-                            "29 Jan 2022",
-                            style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.grey),
-                          ),
-                          SizedBox(
-                            height: 0,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 55,
-                              decoration: new BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.blueGrey[50],
-                              ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 20, right: 20),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Taxi",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blueGrey.shade900),
-                                        ),
-                                        Text(
-                                          "19:12",
-                                          style: TextStyle(
-                                              fontSize: 13, color: Colors.grey),
-                                        )
-                                      ],
-                                    ),
-                                    Text(
-                                      "-6.59\$",
-                                      style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.red),
-                                    )
-                                  ],
+                            //////////////////////////////////////////////
+                            ///
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 10),
+                              child: Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 55,
+                                decoration: new BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.blueGrey[50],
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 20, right: 20),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Jason Clark",
+                                            style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                                color:
+                                                    Colors.blueGrey.shade900),
+                                          ),
+                                          Text(
+                                            "Just now",
+                                            style: TextStyle(
+                                                fontSize: 13,
+                                                color: Colors.grey),
+                                          )
+                                        ],
+                                      ),
+                                      Text(
+                                        "-46.79\$",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.red),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
-                          ), //////////////////
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 55,
-                              decoration: new BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.blueGrey[50],
+                            ///////////////////////////////////////////
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              "29 Jan 2022",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.grey),
+                            ),
+                            SizedBox(
+                              height: 0,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 10),
+                              child: Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 55,
+                                decoration: new BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.blueGrey[50],
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 20, right: 20),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Taxi",
+                                            style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                                color:
+                                                    Colors.blueGrey.shade900),
+                                          ),
+                                          Text(
+                                            "19:12",
+                                            style: TextStyle(
+                                                fontSize: 13,
+                                                color: Colors.grey),
+                                          )
+                                        ],
+                                      ),
+                                      Text(
+                                        "-6.59\$",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.red),
+                                      )
+                                    ],
+                                  ),
+                                ),
                               ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 20, right: 20),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Katelyn Gray",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blueGrey.shade900),
-                                        ),
-                                        Text(
-                                          "15:23",
-                                          style: TextStyle(
-                                              fontSize: 13, color: Colors.grey),
-                                        )
-                                      ],
-                                    ),
-                                    Text(
-                                      "-146.90\$",
-                                      style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.red),
-                                    )
-                                  ],
+                            ), //////////////////
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 10),
+                              child: Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 55,
+                                decoration: new BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.blueGrey[50],
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 20, right: 20),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Katelyn Gray",
+                                            style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                                color:
+                                                    Colors.blueGrey.shade900),
+                                          ),
+                                          Text(
+                                            "15:23",
+                                            style: TextStyle(
+                                                fontSize: 13,
+                                                color: Colors.grey),
+                                          )
+                                        ],
+                                      ),
+                                      Text(
+                                        "-146.90\$",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.red),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ), //////////////////////////////
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 10),
+                              child: Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 55,
+                                decoration: new BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.blueGrey[50],
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 20, right: 20),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Alex Griffits",
+                                            style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                                color:
+                                                    Colors.blueGrey.shade900),
+                                          ),
+                                          Text(
+                                            "12:24",
+                                            style: TextStyle(
+                                                fontSize: 13,
+                                                color: Colors.grey),
+                                          )
+                                        ],
+                                      ),
+                                      Text(
+                                        "-645.00\$",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.red),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
-                          ), //////////////////////////////
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 55,
-                              decoration: new BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.blueGrey[50],
-                              ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 20, right: 20),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Alex Griffits",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blueGrey.shade900),
-                                        ),
-                                        Text(
-                                          "12:24",
-                                          style: TextStyle(
-                                              fontSize: 13, color: Colors.grey),
-                                        )
-                                      ],
-                                    ),
-                                    Text(
-                                      "-645.00\$",
-                                      style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.red),
-                                    )
-                                  ],
-                                ),
-                              ),
+                            //// //// //// //// //// //// //// //// //// //// //// ////
+                            SizedBox(
+                              height: 20,
                             ),
-                          ),
-                          //// //// //// //// //// //// //// //// //// //// //// ////
-                          SizedBox(
-                            height: 20,
-                          ),
-                          Text(
-                            "28 Jan 2022",
-                            style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.grey),
-                          ),
-                          SizedBox(
-                            height: 0,
-                          ),
+                            Text(
+                              "28 Jan 2022",
+                              style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.grey),
+                            ),
+                            SizedBox(
+                              height: 0,
+                            ),
 
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 55,
-                              decoration: new BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.blueGrey[50],
-                              ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 20, right: 20),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Suneil England",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blueGrey.shade900),
-                                        ),
-                                        Text(
-                                          "9:12",
-                                          style: TextStyle(
-                                              fontSize: 13, color: Colors.grey),
-                                        )
-                                      ],
-                                    ),
-                                    Text(
-                                      "+1,109.00\$",
-                                      style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.green),
-                                    )
-                                  ],
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 10),
+                              child: Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 55,
+                                decoration: new BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.blueGrey[50],
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 20, right: 20),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Suneil England",
+                                            style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                                color:
+                                                    Colors.blueGrey.shade900),
+                                          ),
+                                          Text(
+                                            "9:12",
+                                            style: TextStyle(
+                                                fontSize: 13,
+                                                color: Colors.grey),
+                                          )
+                                        ],
+                                      ),
+                                      Text(
+                                        "+1,109.00\$",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.green),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
 
-                          ////////////////////////////////////////////
-                          ///
-                          Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10),
-                            child: Container(
-                              width: MediaQuery.of(context).size.width,
-                              height: 55,
-                              decoration: new BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.blueGrey[50],
-                              ),
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.only(left: 20, right: 20),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Kobe-Jordan Watson",
-                                          style: TextStyle(
-                                              fontSize: 15,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.blueGrey.shade900),
-                                        ),
-                                        Text(
-                                          "5:23",
-                                          style: TextStyle(
-                                              fontSize: 13, color: Colors.grey),
-                                        )
-                                      ],
-                                    ),
-                                    Text(
-                                      "+612.00\$",
-                                      style: TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.green),
-                                    )
-                                  ],
+                            ////////////////////////////////////////////
+                            ///
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 10),
+                              child: Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: 55,
+                                decoration: new BoxDecoration(
+                                  borderRadius: BorderRadius.circular(50),
+                                  color: Colors.blueGrey[50],
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      left: 20, right: 20),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Kobe-Jordan Watson",
+                                            style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                                color:
+                                                    Colors.blueGrey.shade900),
+                                          ),
+                                          Text(
+                                            "5:23",
+                                            style: TextStyle(
+                                                fontSize: 13,
+                                                color: Colors.grey),
+                                          )
+                                        ],
+                                      ),
+                                      Text(
+                                        "+612.00\$",
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.green),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
