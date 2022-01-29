@@ -25,7 +25,7 @@ class _battomnavBarState extends State<battomnavBar> {
             label: 'History',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.chat),
+            icon: Icon(Icons.person),
             label: 'profile',
           ),
         ],
